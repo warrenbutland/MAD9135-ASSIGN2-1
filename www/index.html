@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+  -->
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+   
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+      <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css">
+      
+    <!-- <link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.structure.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.theme.min.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    
+
+    <title>MAD9135-ASSIGN2</title>
+  </head>
+  <body>
+
+    <div data-role="page" data-theme="a" id="home" >
+
+      <div id="header">
+        <h1 class="appName"> PodCast APP </h1>
+      </div>
+      <div >
+        <button class="addMusic">Add Music</button>
+      </div>
+
+      <div class="inputButton">
+        <input id="urlInput" autocompolet = "on"  type='text' name="" placeholder='enter URL for podcast'/>
+
+        <!-- <input type="submit" id="submit_btn" value="Submit" data-theme="a" data-inline="true"  />  -->
+      <a href="#" id="submit_btn">Submit</a>
+
+
+      </div>
+
+      <p>Search downloaded Podcasts</p>
+      <ul data-role="listview" data-inset="true" data-filter="true" class="loadedMusicList">
+
+
+      </ul>
+      <div class="addMusicToApp">
+
+      </div>
+
+      <div data-role="footer" data-position="fixed" >           
+      </div><!-- /footer -->
+
+    </div><!-- /page -->
+
+    <div data-role="page" data-theme="a" id="musicPage">
+
+      <div data-role="header" data-position="fixed">
+        <button class="backButton">BACK</button>
+        
+      </div>
+      <div data-role="content">
+        
+        <ol id="nowPlaying">Now Playing </ol>
+        <img class="mp3Image" src="img/BalloonLogo.jpg" ></img>
+      </div>
+
+
+
+            
+      <div class="playButtons">
+          <button id="audioPlay">Play</button>
+          <button id="audioPause">Pause</button>
+          <button id="audioStop">Stop</button>
+        </div>
+          <!-- <button id="mediaPosition">Media position</button> -->
+          <button id="forwardSkip">Skip 30 seconds forward</button>
+          <button id="backSkip">Skip 15 seconds back</button>
+  
+
+      <div data-role="footer" data-position="fixed" >
+
+        <a href="#home" id="footer" data-role="button" data-theme="a">Back</a>
+      </div><!-- /footer -->
+
+
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+  <!--  <script type="text/javascript" src="js/jquery-ui.min.js"></script> -->
+    <script type="text/javascript" src="js/index.js"></script>
+
+  </body>
+  </html>
